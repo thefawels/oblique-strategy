@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f8f8f8" />
+    <meta name="description" content="Oblique Strategy — карточки творческих стратегий на русском языке." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="oblique strategy" />
+    <title>oblique strategy</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="./assets/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest?v=3" />
+    <link rel="stylesheet" href="./style.css?v=3" />
+    <script type="module" src="./app.js?v=3"></script>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="app">
+        <header class="header">
+          <h1>oblique strategy</h1>
+        </header>
+        <main class="main">
+          <div class="deck" aria-label="Колода стратегий">
+            <div class="sheet sheet--bottom" aria-hidden="true"></div>
+            <div class="sheet sheet--middle" aria-hidden="true"></div>
+            <div class="sheet sheet--top" aria-hidden="true"></div>
+            <article class="card card--waiting" aria-hidden="true">
+              <p class="card__text"></p>
+              <span class="card__number" aria-hidden="true"></span>
+            </article>
+            <article class="card card--current" aria-label="Карточка">
+              <p class="card__text"></p>
+              <span class="card__number" aria-hidden="true"></span>
+            </article>
+          </div>
+          <div class="draw-control">
+            <button class="draw-button" type="button" aria-label="получить решение">
+              <span class="button__label button__label--current" aria-hidden="true">получить решение</span>
+              <span class="button__label button__label--next" aria-hidden="true"></span>
+            </button>
+            <input class="haptic-switch" type="checkbox" switch tabindex="-1" aria-hidden="true" hidden />
+          </div>
+          <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" id="announcement"></p>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
